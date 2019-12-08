@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
 DIR=$HOME/src
-SETUP_DIR=$DIR/mac-setup
+SETUP_DIR="${DIR}/mac-setup"
+PLAYBOOK_DIR="${SETUP_DIR}/playbooks"
 
 cd $DIR
 
@@ -10,5 +11,6 @@ sudo python get-pip.py
 rm get-pip.py
 sudo pip install ansible
 
-ansible-galaxy install -r $SETUP_DIR/requirements.yml
+ansible-playbook "$PLAYBOOK_DIR/setup.yml" -i "$SETUP_DIR/inventory" -K
+ansible-galaxy install --roles-path $SETUP_DIR/roles/galaxy --role-file $SETUP_DIR/requirements.yml
 ansible-playbook $SETUP_DIR/main.yml -i $SETUP_DIR/inventory -K
