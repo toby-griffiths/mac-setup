@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+DIR=$HOME/src
+SETUP_DIR=$DIR/mac-setup
+
+cd $DIR
+
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python get-pip.py
+rm get-pip.py
+sudo pip install ansible
+
+ansible-galaxy install -r $SETUP_DIR/requirements.yml
+ansible-playbook $SETUP_DIR/main.yml -i $SETUP_DIR/inventory -K
