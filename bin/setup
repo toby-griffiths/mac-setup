@@ -16,7 +16,4 @@ rm get-pip.py
 # Install ansible
 sudo pip install ansible
 
-# Run ansible playbooks for everything else
-cd ${SETUP_DIR}
-ansible-galaxy install --role-file requirements.yml
-ansible-playbook main.yml -i inventory -K
+bin/update

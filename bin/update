@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+SETUP_DIR="${HOME}/src/mac-setup"
+
+# Run ansible playbooks
+cd ${SETUP_DIR}
+ansible-galaxy install --role-file requirements.yml
+ansible-playbook main.yml -i inventory -K
