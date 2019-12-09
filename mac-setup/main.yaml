@@ -1,0 +1,20 @@
+---
+- hosts: all
+
+  vars_files
+    - default.config.yml
+
+  pre-tasks:
+    - include_vars: "{{ items }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml'
+      tags: ['always']
+
+  roles:
+    - role: geerlingguy.homebrew
+      tags: ['homebrew']
+    - role: geerlingguy.mas
+      tags: ['mas']
+
+  tasks:
+    include_tasks: tasks/ansible-setup.yml
