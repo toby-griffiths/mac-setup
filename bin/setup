@@ -10,5 +10,6 @@ sudo python get-pip.py
 rm get-pip.py
 sudo pip install ansible
 
+cd "${SETUP_DIR}"
 ansible-galaxy install --role-file $SETUP_DIR/requirements.yml
 ansible-playbook $SETUP_DIR/main.yml -i $SETUP_DIR/inventory -K
