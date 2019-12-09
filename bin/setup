@@ -1,15 +1,22 @@
 #!/usr/bin/env sh
 
-DIR=$HOME/src
+DIR=${HOME}/src
 SETUP_DIR="${DIR}/mac-setup"
 
 cd $DIR
 
+# Install Apple command line tools
+xcode-select --install
+
+# Install pip
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-sudo python get-pip.py
+sudo python3 get-pip.py
 rm get-pip.py
+
+# Install ansible
 sudo pip install ansible
 
-cd "${SETUP_DIR}"
-ansible-galaxy install --role-file $SETUP_DIR/requirements.yml
-ansible-playbook $SETUP_DIR/main.yml -i $SETUP_DIR/inventory -K
+# Run ansible playbooks for everything else
+cd ${SETUP_DIR}
+ansible-galaxy install --role-file requirements.yml
+ansible-playbook main.yml -i inventory -K
