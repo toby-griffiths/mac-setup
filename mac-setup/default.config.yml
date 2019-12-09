@@ -1,6 +1,8 @@
 ---
 downloads: ~/.ansible-downloads/
 
+configure_sudoers: yes
+
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
@@ -29,7 +31,9 @@ homebrew_cask_apps:
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 1333542190, name: "1Password 7" }
+  - { id: 557168941, name: "Tweetbot" }
 mas_email: "toby@cubicmushroom.co.uk"
 mas_password: ""
 
