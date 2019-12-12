@@ -2,29 +2,42 @@
 downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
+configure_osx:     yes
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - autojump
   - composer
   - git
+  - hub
   - libevent
   - sqlite
   - mcrypt
+  - neovim
   - node
   - php
   - openssl
+  - reattach-to-user-namespace
+  - tmux
   - wget
+  - zsh
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
+  - alfred
+  - amazon-music
   - chromedriver
   - docker
   - dropbox
   - firefox
   - google-chrome
+  - google-drive-file-stream
+  - iterm2
+  - phpstorm
   - sequel-pro
   - skitch
   - slack
@@ -32,7 +45,6 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 1333542190, name: "1Password 7" }
   - { id: 557168941, name: "Tweetbot" }
 mas_email: "toby@cubicmushroom.co.uk"
 mas_password: ""
@@ -42,7 +54,8 @@ osx_script: "~/.osx --no-restart"
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
 # installed, eg. through homebrew.
-composer_packages: []
+composer_packages:
+  - name: hirak/prestissimo
   # - name: drush
   #   state: present # present/absent, default: present
   #   version: "^8.1" # default: N/A
