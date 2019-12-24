@@ -35,3 +35,5 @@ Things I want this to do in the future…
 1. Install Dash app
 1. Install Timeout app
 1. Install Fortnite
+1. Import iTerm2 profile
+1. Enable terraform completions (terraform -install-autocomplete)
