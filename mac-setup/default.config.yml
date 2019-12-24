@@ -9,6 +9,7 @@ homebrew_installed_packages:
   - autoconf
   - autojump
   - composer
+  - doctl
   - git
   - hub
   - libevent
@@ -19,6 +20,7 @@ homebrew_installed_packages:
   - php
   - openssl
   - reattach-to-user-namespace
+  - terraform
   - tmux
   - wget
   - yarn
@@ -26,12 +28,15 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-versions
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
   - alfred
   - amazon-music
+  - brave-browser
   - chromedriver
+  - dash4
   - docker
   - dropbox
   - firefox
