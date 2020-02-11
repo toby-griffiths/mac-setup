@@ -8,10 +8,13 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
   - autojump
+  - awscli
   - composer
   - doctl
   - git
   - hub
+  - jq
+  - kubectl
   - libevent
   - sqlite
   - mcrypt
@@ -21,6 +24,7 @@ homebrew_installed_packages:
   - openssl
   - reattach-to-user-namespace
   - terraform
+  - tor
   - tmux
   - wget
   - yarn
@@ -34,20 +38,26 @@ homebrew_cask_apps:
   - 1password
   - alfred
   - amazon-music
+  - aws-vault
   - brave-browser
   - chromedriver
-  - dash4
+  - dash2
   - docker
   - dropbox
   - firefox
   - google-chrome
   - google-drive-file-stream
   - iterm2
+  - libreoffice
+  - nextcloud
   - phpstorm
   - sequel-pro
   - skitch
   - slack
+  - tor-browser
   - vagrant
+  - virtualbox
+  - vnc-viewer
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
@@ -77,6 +87,7 @@ pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
+  # - powerline-status
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
