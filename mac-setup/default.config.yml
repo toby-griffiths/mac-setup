@@ -53,6 +53,7 @@ homebrew_cask_apps:
   - nextcloud
   - nvalt
   - phpstorm
+  - raspberry-pi-imager
   - sequel-pro
   - skitch
   - slack
