@@ -43,6 +43,7 @@ homebrew_cask_apps:
   - brave-browser
   - chromedriver
   - dash2
+  - discord
   - docker
   - dropbox
   - firefox
@@ -57,6 +58,7 @@ homebrew_cask_apps:
   - sequel-pro
   - skitch
   - slack
+  - steam
   - tor-browser
   - vagrant
   - virtualbox
