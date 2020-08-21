@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - tor
   - tmux
   - wget
+  - wireshark # CLI tools only.  Use `wireshark` cask for GUI
   - yarn
   - zsh
 homebrew_taps:
