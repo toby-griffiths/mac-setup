@@ -68,6 +68,7 @@ homebrew_cask_apps:
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   - { id: 557168941, name: "Tweetbot" }
+  - { id: 1497506650, name: "Yubico authenticator" }
 mas_email: "toby@cubicmushroom.co.uk"
 mas_password: ""
 
