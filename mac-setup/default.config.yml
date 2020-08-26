@@ -11,6 +11,7 @@ homebrew_installed_packages:
   - awscli
   - composer
   - doctl
+  - github/gh/gh
   - git
   - hub
   - jq
