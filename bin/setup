@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 DIR=${HOME}/src
 SETUP_DIR="${DIR}/mac-setup"
 

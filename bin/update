@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# Exit script if any line fails
+set -e
+
 SETUP_DIR="${HOME}/src/mac-setup"
 
 # Run ansible playbooks
