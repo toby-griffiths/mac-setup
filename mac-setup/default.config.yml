@@ -70,6 +70,7 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 557168941, name: "Tweetbot" }
   - { id: 1497506650, name: "Yubico authenticator" }
+  - { id: 402592703, name: "Time Out - Break Reminders" }
 mas_email: "toby@cubicmushroom.co.uk"
 mas_password: ""
 
