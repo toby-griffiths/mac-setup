@@ -40,6 +40,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
   - alfred
+  - arduino
   - aws-vault
   - brave-browser
   - calibre
